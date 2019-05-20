@@ -250,7 +250,7 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 
 1.  Research how to delete multiple entries from your table in a single command.
 
-    For this I picked out the Iron Man movies to delete:
+    For this I picked out the Iron Man movies by id to delete:
 
     DELETE FROM movies WHERE id IN (1,3,7);
     SELECT title FROM movies;
@@ -274,3 +274,25 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
       Black Panther
       Avengers: Infinity War
       (16 rows)
+
+
+      Can also delete a selection of entries:
+
+      DELETE FROM people WHERE id BETWEEN 2 and 5;
+      SELECT * FROM people;
+
+            id |          name          
+      ----+------------------------
+       1 | Homer Simpson
+       6 | Selma Bouvier
+       7 | Kent Brockman
+       8 | Ned Flanders
+       9 | Barney Gumble
+      10 | Itchy
+      12 | Scratchy
+      14 | Montgomery Burns
+      15 | Mayor Joe Quimby
+      16 | Apu Nahasapeemapetilon
+      17 | Bart Simpson
+      13 | Krusty the Clown
+      (12 rows)
