@@ -249,3 +249,28 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 ## Extension
 
 1.  Research how to delete multiple entries from your table in a single command.
+
+    For this I picked out the Iron Man movies to delete:
+
+    DELETE FROM movies WHERE id IN (1,3,7);
+    SELECT title FROM movies;
+
+          title                
+      -------------------------------------
+      The Incredible Hulk
+      Thor
+      Captain America: The First Avenger
+      Avengers Assemble
+      Thor: The Dark World
+      Captain America: The Winter Soldier
+      Guardians of the Galaxy
+      Avengers: Age of Ultron
+      Ant-Man
+      Captain America: Civil War
+      Doctor Strange
+      Guardians of the Galaxy 2
+      Spider-Man: Homecoming
+      Thor: Ragnarok
+      Black Panther
+      Avengers: Infinity War
+      (16 rows)
